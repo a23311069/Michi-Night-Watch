@@ -2,7 +2,7 @@
 
 Juego 2D en pixel art donde **Canela**, una gatita tricolor, defiende la ventana de un segundo piso durante una invasión de zombis. Sobrevive el mayor tiempo posible y consigue la mejor puntuación.
 
-**Jugar en línea:** https://a23311069/michi-night-watch/
+**Jugar en línea:** https://github.com/a23311069/Michi-Night-Watch/settings/pages
 
 ## Cómo se juega
 
