@@ -1,0 +1,24 @@
+:root{--ink:#f6ecd9;--glow:#ffb35c;--night:#0b0d1f;--card:#1d1030;--line:#8a5ab0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%;margin:0;background:var(--night);color:var(--ink);font-family:VT323,ui-monospace,monospace;overflow:hidden}
+body{display:grid;place-items:center}
+#stage{position:relative;width:min(100vw,160vh);aspect-ratio:8/5;container-type:inline-size;user-select:none;-webkit-user-select:none}
+canvas{width:100%;height:100%;display:block;touch-action:none;image-rendering:pixelated}
+.hud{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:flex-start;padding:1.6cqw 2cqw;pointer-events:none;font:1.3cqw/1.8 'Press Start 2P',monospace;text-shadow:.2cqw .2cqw 0 #000}
+.hud.m .l,.hud.m .mid{visibility:hidden}
+.hud b{font-size:2.4cqw;font-weight:400;color:var(--glow)}
+.hearts{font-size:2.8cqw;letter-spacing:.3cqw;color:#ff5a72}.lost{color:#ffffff30}
+.bar{width:14cqw;height:1cqw;background:#ffffff26;margin:.5cqw 0;border:.2cqw solid #0008}.bar i{display:block;height:100%;width:0;background:var(--glow)}
+.snd{pointer-events:auto;display:flex;gap:.8cqw;align-items:center;justify-content:flex-end}
+.snd button{all:unset;cursor:pointer;font-size:2.6cqw;line-height:1;padding:.5cqw .9cqw;background:#000a;border:.25cqw solid #ffffff55}
+.snd input{width:8cqw;accent-color:var(--glow)}
+button:focus-visible,input:focus-visible{outline:.3cqw solid var(--glow);outline-offset:.2cqw}
+.card{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:min(88%,54cqw);padding:3cqw 3cqw;background:var(--card);border:.5cqw solid var(--line);text-align:center;box-shadow:0 0 0 .5cqw #0b0614,1.2cqw 1.2cqw 0 #000a}
+.card h1,.card h2{font:400 3cqw/1.5 'Press Start 2P',monospace;margin:0 0 1.6cqw;color:#ffd9a0;text-shadow:.35cqw .35cqw 0 #5a2f1c}
+.card p{margin:.6cqw 0;font-size:2.7cqw;line-height:1.2}
+.stat{font-size:3.2cqw!important}
+.btn{all:unset;display:inline-block;cursor:pointer;margin-top:1.6cqw;padding:1.3cqw 3cqw;background:var(--glow);color:#2a1630;font:400 1.8cqw 'Press Start 2P',monospace;box-shadow:inset -.4cqw -.4cqw 0 #c47a30,inset .4cqw .4cqw 0 #ffe0b0,0 .5cqw 0 #6a3a18}
+.btn:active{transform:translateY(.4cqw)}
+.hide{display:none!important}
+@media (max-width:640px){.card p{font-size:3.4cqw}.hud{font-size:1.8cqw}}

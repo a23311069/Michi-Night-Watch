@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Michi Night Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv" aria-label="Canela vigila la ventana"></canvas>
+  <div class="hud m" id="hud">
+    <div class="l"><b id="score">0</b><div>Tiempo <span id="time">0:00</span></div><div class="bar"><i id="bar"></i></div><div id="lvl">Nivel 1</div></div>
+    <div class="hearts mid" id="hearts" aria-live="polite"></div>
+    <div class="snd"><button id="pause" class="hide" aria-label="Pausa">⏸</button><button id="mute" aria-label="Activar o desactivar sonido">🔊</button><input id="vol" type="range" min="0" max="1" step=".05" aria-label="Volumen"></div>
+  </div>
+  <div class="card" id="start">
+    <h1>Michi Night Watch</h1>
+    <p>Canela vigila la ventana del segundo piso. Esta noche no quiere visitas.</p>
+    <p>Mueve el ratón y Canela caminará hasta allí. Haz clic para dar un manotazo. Si un zombi llega a la ventana, pierdes una vida.</p>
+    <button class="btn" id="play">Jugar</button>
+  </div>
+  <div class="card hide" id="pausecard">
+    <h2>Pausa</h2>
+    <p>Canela espera.</p>
+    <button class="btn" id="resume">Continuar</button>
+  </div>
+  <div class="card hide" id="over">
+    <h2>Amaneció</h2>
+    <p>Los zombis ganaron esta noche.</p>
+    <p class="stat">Puntos: <span id="fs">0</span></p>
+    <p class="stat">Récord: <span id="fb">0</span></p>
+    <p id="fn"></p>
+    <button class="btn" id="again">Jugar otra vez</button>
+  </div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
